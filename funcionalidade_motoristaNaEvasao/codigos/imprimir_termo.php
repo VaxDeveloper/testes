@@ -103,6 +103,7 @@ mysqli_close($conexao);
             border-radius: 5px;
         }
         p {
+            font-size: .9rem;
             margin: 10px 0;
         }
         table {
@@ -115,6 +116,7 @@ mysqli_close($conexao);
         }
         th, td {
             padding: 10px;
+            font-size: .9rem;
             text-align: left;
         }
         th {
@@ -139,6 +141,7 @@ mysqli_close($conexao);
 
         .assinar {
             margin-bottom: 10px;
+            font-size: .8rem;
         }
     </style>
 </head>
@@ -149,7 +152,7 @@ mysqli_close($conexao);
                 <img src="logo.png" alt="logo-sm">
             </div>
             <div id="title">
-                <h2>Autorização Para Desconto Em Folha</h2>
+                <h3>Autorização Para Desconto Em Folha</h3>
             </div>
         </div>
         <div class="linha-separadora"></div>
@@ -198,24 +201,24 @@ mysqli_close($conexao);
         
         <div class="assinatura">
             <div>
-                <P> ______________________________</P>
-                <div><?php echo htmlspecialchars($nome_motorista); ?></div>
+                <P> __________________________________</P>
+                <p class="assinar"><?php echo htmlspecialchars($nome_motorista); ?></p>
             </div>
             <div>
-                <P>______________________________</P>
-                <p class="assinar">Empresa:</p>
+                <P>__________________________________</P>
+                <p class="assinar">Transporte Urbano São Miguel de Ilhéus LTDA</p>
             </div>
         </div>
         <div class="assinatura">
             <div>
-                <P>______________________________</P>
+                <P>__________________________________</P>
                 <p class="assinar">Testemunha 1:</p>
-                <p>CPF:__________________________</p>
+                <p>CPF:______________________________</p>
             </div>
             <div>
-                <P>______________________________</P>
+                <P>__________________________________</P>
                 <p class="assinar">Testemunha 2:</p>
-                <p>CPF:__________________________</p>
+                <p>CPF:______________________________</p>
             </div>
         </div>
     </div>
